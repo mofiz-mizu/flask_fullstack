@@ -1,0 +1,38 @@
+# Comments start with a hash symbol (#)
+# Blank lines are ignored
+
+# --- General Files to Ignore ---
+
+# Ignore all files ending with .log in any directory
+*.log
+
+# Ignore all temporary files
+*.tmp
+.git
+
+# Ignore environment variable files
+#.env
+#.env.local
+
+# Ignore OS-specific hidden files
+.DS_Store
+Thumbs.db
+
+# --- Directories to Ignore ---
+
+# Ignore the entire node_modules dependency directory
+node_modules/
+
+# Ignore build/output directories
+/build/
+/dist/
+target/
+
+# Ignore specific directories at any level
+**/temp/
+
+# --- Specific File/Directory Exceptions (Negation) ---
+
+# Ignore all log files, BUT include a specific important one
+# Note: This only works for files, not files within an ignored directory
+!important.log
